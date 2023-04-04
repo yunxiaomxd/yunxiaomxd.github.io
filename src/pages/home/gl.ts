@@ -27,8 +27,8 @@ export function createShader(gl: WebGLRenderingContext, type: number, source: st
 
 export function init(ref: React.RefObject<HTMLCanvasElement>) {
   const canvas = ref.current as HTMLCanvasElement;
-  canvas.width = document.documentElement.offsetWidth;
-  canvas.height = document.documentElement.offsetHeight;;
+  canvas.width = 1080;
+  canvas.height = 640;
   const gl = canvas.getContext('webgl') as WebGLRenderingContext;
 
   return { canvas, gl };

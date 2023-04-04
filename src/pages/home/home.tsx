@@ -35,7 +35,7 @@ export default function Home() {
     
       const render = () => {
         gl.useProgram(program);
-        uniforms.u_time += 0.05;
+        uniforms.u_time += 0.01;
     
         gl.uniform1f(uTimeLocation, uniforms.u_time);
         gl.uniform2fv(uResolutionLocation, uniforms.u_resolution);
