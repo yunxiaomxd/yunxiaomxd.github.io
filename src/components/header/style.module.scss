@@ -1,0 +1,22 @@
+.header {
+  @apply h-[64px];
+  @apply w-full;
+  @apply flex;
+  @apply text-white;
+  @apply absolute;
+  @apply z-[1];
+  @apply bg-stone-100/[.2];
+
+  &-item {
+    @apply px-[16px];
+    @apply py-[10px];
+    @apply inline-flex;
+    @apply items-center;
+    @apply cursor-pointer;
+    @apply hover:bg-sky-600;
+    @apply transition;
+    @apply transition-all;
+    @apply delay-300;
+    @apply h-full; 
+  }
+}
