@@ -8,15 +8,16 @@
   @apply bg-stone-100/[.2];
 
   &-item {
+    transition: all .3s;
+
     @apply px-[16px];
     @apply py-[10px];
     @apply inline-flex;
     @apply items-center;
     @apply cursor-pointer;
-    @apply hover:bg-sky-600;
-    @apply transition;
-    @apply transition-all;
-    @apply delay-300;
-    @apply h-full; 
+    @apply h-full;
+    &:hover {
+      @apply bg-sky-600;
+    }
   }
 }

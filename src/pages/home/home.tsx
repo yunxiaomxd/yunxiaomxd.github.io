@@ -5,6 +5,7 @@ import { createShader, createProgram, scene, uniforms, init } from "./gl";
 import { Header } from "../../components";
 
 import styles from './styles.module.scss';
+import Content from "./content";
 
 export default function Home() {
   const ref = useRef<HTMLCanvasElement>(null);
@@ -63,6 +64,7 @@ export default function Home() {
     <>
       <canvas className={styles.canvas} ref={ref} />
       <Header />
+      <Content recentArticles={[]} />
     </>
   )
 }

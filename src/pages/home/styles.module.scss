@@ -1,9 +1,21 @@
 .canvas {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   user-select: none;
+}
+
+.content {
+  @apply w-[60%];
+  @apply ml-[10%];
+  @apply bg-stone-100/[.2];
+  @apply p-[10px];
+}
+
+.empty {
+  @apply text-center;
+  @apply py-[24px];
 }
